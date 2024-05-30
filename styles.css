@@ -1,0 +1,179 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.main-container {
+    display: flex;
+    border: 8px solid #333;
+
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #333;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.page {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-picture-container {
+    
+    border: 8px solid #333;
+    border-radius: 90%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /*
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.profile-picture {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 0.9;
+}
+
+.name-title {
+    margin-top: 10px;
+    font-size: 44px;
+    color: #333;
+}
+
+.job-title {
+    margin-top: 5px;
+    color: #555;
+    font-size: 20px;
+}
+
+.bio-section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.bio-section h2{
+    font-size: 35px;
+}
+.bio-section p{
+    font-size: 20px;
+    width: 100%;
+}
+
+
+html, body, .main-container {
+    height: 100%;
+}
+.personal-logo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 70px; /* ضبط حجم الصورة حسب الحاجة */
+    height: auto;
+    border-radius: 20%; /* إذا كانت الصورة دائرية */
+    border: 2px solid #000000; /* لتحديد حاشية بيضاء حول الصورة */
+    z-index: 1500;
+    margin-right: 25px;
+}
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 37em;
+}
+/* 
+.profile-picture-container::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 140%;
+    background-color: gold;
+    box-shadow: 0 0 20px rgb(8,8,8);
+    animation: animate 4s linear infinite;
+ }
+
+ .profile-picture-container::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: black;
+    background-repeat: 16px;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+*/

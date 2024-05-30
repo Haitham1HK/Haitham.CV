@@ -1,0 +1,32 @@
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#card1 {
+    animation: slideIn 1s ease-out;
+}
+
+#card2 {
+    animation: fadeIn 2s ease-in;
+}
+
+#card3 {
+    animation: slideIn 1s ease-out;
+    animation-delay: 1s;
+}
