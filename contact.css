@@ -12,6 +12,7 @@ body {
 
 .main-container {
     display: flex;
+    
 }
 
 .sidebar {
@@ -56,6 +57,8 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
     overflow: hidden;
+    margin-top: 20px;
+
 }
 
 .contact-page {
